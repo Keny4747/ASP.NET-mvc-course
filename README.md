@@ -1,9 +1,9 @@
 # ASP.NET-mvc-course
-###Sesion 01:\
+### Sesion 01:\
 -Conexion MySQL
 -Modelos
 -CRUD
-###Sesion 02:
+### Sesion 02:
 -Operaciones Razor
 -ViewData
 -ViewBag
