@@ -10,3 +10,9 @@
 - TempData
 - Coockies
 - Session
+### Sesion 02:
+- Conexión a BD
+- Transacciones
+- LINQ
+- CRUD
+- Data Model
