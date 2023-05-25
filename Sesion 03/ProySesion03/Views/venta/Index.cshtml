@@ -1,0 +1,25 @@
+﻿@model List<ProySesion03.Models.VentaModel>
+
+<h2>Lista de Ventas</h2>
+<button class="btn btn-primary" type="button" asp-action="Create">Crear Venta</button>
+
+<table class="table table-striped">
+    <tr>
+        <th>Id</th>
+        <th>Nombre</th>
+        <th>Descripcion</th>
+        <th>Acciones</th>
+    </tr>
+    @foreach(var venta in Model)
+    {
+        <tr>
+            <td>@venta.id</td>
+            <td>@venta.nombre</td>
+            <td>@venta.descripcion</td>
+            <td>
+                <a asp-action="Actualizar" asp-route-id="@venta.id">Actualizar</a>
+            </td>
+        </tr>
+    }
+
+</table>

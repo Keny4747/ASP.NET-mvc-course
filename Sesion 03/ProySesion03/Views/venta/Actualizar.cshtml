@@ -1,0 +1,20 @@
+﻿@model ProySesion03.Models.VentaModel
+
+<h2>Actulizar Venta</h2>
+
+@using (Html.BeginForm(FormMethod.Post))
+{
+    @Html.HiddenFor(model=>model.id)
+
+    <div>
+        @Html.LabelFor(model=>model.nombre)
+        @Html.TextBoxFor(model=>model.nombre)
+    </div>
+
+    <div>
+        @Html.LabelFor(model=>model.descripcion)
+        @Html.TextBoxFor(model=>model.descripcion)
+    </div>
+
+    <input type="submit" value="Actualizar venta" />
+}
