@@ -1,0 +1,40 @@
+﻿@model List<Tarea02.Models.LibroModel>
+
+<h2 >
+    <span class="border-bottom border-success">Lista de Libros</span>
+</h2>
+
+
+<a class="btn btn-primary" asp-controller="Libro" asp-action="Create" align="left" class="m-3">Agregar Libro</a>
+
+<table class="table table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th>Id</th>
+            <th>Título</th>
+            <th>Descripción</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var libro in Model)
+        {
+            <tr>
+                <td>@libro.id</td>
+                <td>@libro.titulo</td>
+                <td>@libro.descripcion</td>
+                <td><a class="btn btn-warning" asp-action="Detalle" asp-route-id="@libro.id">Detalles</a></td>
+
+                <td><a class="btn btn-primary" asp-action="Actualizar" asp-route-id="@libro.id">Editar</a></td>
+                <td>
+                    <form method="post" asp-action="Delete" asp-route-id="@libro.id" onsubmit="return confirm('¿Estás seguro de que deseas eliminar este libro?');">
+                        <button type="submit" class="btn btn-danger">Eliminar</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+

@@ -1,0 +1,29 @@
+﻿@model Tarea02.Models.LibroModel
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6 border rounded shadow p-4">
+            <h2 class="text-center mb-4">Agregar Libro</h2>
+
+            @using (Html.BeginForm(FormMethod.Post))
+            {
+                <div class="form-group m-3">
+                    <label asp-for="titulo" class="control-label">Título:</label>
+                    @Html.TextBoxFor(model => model.titulo, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.titulo, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="form-group m-3">
+                    <label asp-for="titulo" class="control-label">Descripción:</label>
+                    @Html.TextAreaFor(model => model.descripcion, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.descripcion, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="text-center">
+                    <input type="submit" value="Agregar" class="btn btn-success" />
+                    <a href="@Url.Action("Index", "Libro")" class="btn btn-danger">Cancelar</a>
+                </div>
+            }
+        </div>
+    </div>
+</div>

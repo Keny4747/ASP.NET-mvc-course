@@ -1,0 +1,26 @@
+﻿@model Tarea02.Models.LibroModel
+
+<div class="container d-flex justify-content-center align-items-center">
+    <div class="card">
+        <div class="card-body">
+            <h2 class="card-title">Detalles del Libro</h2>
+
+            <table class="table">
+                <tr>
+                    <th>Id</th>
+                    <td>@Model.id</td>
+                </tr>
+                <tr>
+                    <th>Título</th>
+                    <td>@Model.titulo</td>
+                </tr>
+                <tr>
+                    <th>Descripción</th>
+                    <td>@Model.descripcion</td>
+                </tr>
+            </table>
+
+            <a asp-action="Index" class="btn btn-success">Volver</a>
+        </div>
+    </div>
+</div>
