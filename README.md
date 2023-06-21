@@ -3,14 +3,14 @@
 - Conexion MySQL
 - Modelos
 - CRUD
-### Sesion 02:
+### [Sesión 02:](https://github.com/Keny4747/ASP.NET-mvc-course/tree/main/Sesion%2002)
 - Operaciones Razor
 - ViewData
 - ViewBag
 - TempData
 - Coockies
 - Session
-### Sesion 03:
+### [Sesion 03:](https://github.com/Keny4747/ASP.NET-mvc-course/tree/main/Sesion%2003)
 - Conexión a BD
 - Transacciones
 - LINQ
