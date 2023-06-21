@@ -1,0 +1,25 @@
+﻿@model Pregunta02.Models.UsuarioModel
+
+<!DOCTYPE html>
+
+
+    REGISTRAR TEMA
+
+    <form asp-controller="Usuario" asp-action="Registrar">
+    <label>Tema:</label>
+    <select asp-for="nombre" class="form-control">
+        <option value="">Seleccione un Tema</option>
+        @foreach (var nombre in ViewBag.Temas)
+        {
+            <option value="@nombre">@nombre</option>
+        }
+    </select>
+   
+
+        <br><button type="submit" class="btn btn-primary">Registrar</button>
+    </form>
+    <br>
+@{
+    var username = Context.Request.Cookies["tema"];
+}
+<h1>TEMA PREFERIDO, @username</h1>
