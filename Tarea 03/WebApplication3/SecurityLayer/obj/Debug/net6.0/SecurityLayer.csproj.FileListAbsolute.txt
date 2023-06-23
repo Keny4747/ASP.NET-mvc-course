@@ -1,0 +1,12 @@
+D:\proyectos\temp\source\WebApplication3\SecurityLayer\bin\Debug\net6.0\SecurityLayer.deps.json
+D:\proyectos\temp\source\WebApplication3\SecurityLayer\bin\Debug\net6.0\SecurityLayer.dll
+D:\proyectos\temp\source\WebApplication3\SecurityLayer\bin\Debug\net6.0\SecurityLayer.pdb
+D:\proyectos\temp\source\WebApplication3\SecurityLayer\obj\Debug\net6.0\SecurityLayer.csproj.AssemblyReference.cache
+D:\proyectos\temp\source\WebApplication3\SecurityLayer\obj\Debug\net6.0\SecurityLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\proyectos\temp\source\WebApplication3\SecurityLayer\obj\Debug\net6.0\SecurityLayer.AssemblyInfoInputs.cache
+D:\proyectos\temp\source\WebApplication3\SecurityLayer\obj\Debug\net6.0\SecurityLayer.AssemblyInfo.cs
+D:\proyectos\temp\source\WebApplication3\SecurityLayer\obj\Debug\net6.0\SecurityLayer.csproj.CoreCompileInputs.cache
+D:\proyectos\temp\source\WebApplication3\SecurityLayer\obj\Debug\net6.0\SecurityLayer.dll
+D:\proyectos\temp\source\WebApplication3\SecurityLayer\obj\Debug\net6.0\refint\SecurityLayer.dll
+D:\proyectos\temp\source\WebApplication3\SecurityLayer\obj\Debug\net6.0\SecurityLayer.pdb
+D:\proyectos\temp\source\WebApplication3\SecurityLayer\obj\Debug\net6.0\ref\SecurityLayer.dll

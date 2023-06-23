@@ -1,0 +1,12 @@
+D:\proyectos\temp\source\WebApplication3\ServiceLayer\bin\Debug\net6.0\ServiceLayer.deps.json
+D:\proyectos\temp\source\WebApplication3\ServiceLayer\bin\Debug\net6.0\ServiceLayer.dll
+D:\proyectos\temp\source\WebApplication3\ServiceLayer\bin\Debug\net6.0\ServiceLayer.pdb
+D:\proyectos\temp\source\WebApplication3\ServiceLayer\obj\Debug\net6.0\ServiceLayer.csproj.AssemblyReference.cache
+D:\proyectos\temp\source\WebApplication3\ServiceLayer\obj\Debug\net6.0\ServiceLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\proyectos\temp\source\WebApplication3\ServiceLayer\obj\Debug\net6.0\ServiceLayer.AssemblyInfoInputs.cache
+D:\proyectos\temp\source\WebApplication3\ServiceLayer\obj\Debug\net6.0\ServiceLayer.AssemblyInfo.cs
+D:\proyectos\temp\source\WebApplication3\ServiceLayer\obj\Debug\net6.0\ServiceLayer.csproj.CoreCompileInputs.cache
+D:\proyectos\temp\source\WebApplication3\ServiceLayer\obj\Debug\net6.0\ServiceLayer.dll
+D:\proyectos\temp\source\WebApplication3\ServiceLayer\obj\Debug\net6.0\refint\ServiceLayer.dll
+D:\proyectos\temp\source\WebApplication3\ServiceLayer\obj\Debug\net6.0\ServiceLayer.pdb
+D:\proyectos\temp\source\WebApplication3\ServiceLayer\obj\Debug\net6.0\ref\ServiceLayer.dll

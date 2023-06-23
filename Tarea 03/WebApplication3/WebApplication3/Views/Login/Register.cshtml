@@ -1,0 +1,47 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/AuthLayout.cshtml";
+}
+@section MiPiePagina {
+    <div>Mi Pie de Página</div>
+}
+<div class="card">
+    <div class="card-body login-card-body">
+        <p class="login-box-msg">Nuevo Usuario</p>
+
+        <form asp-action="Register" method="post">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Usuario" name="usuario">
+                <div class="input-group-append">
+                    <div class="input-group-text">
+                        <span class="fas fa-envelope"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <input type="password" class="form-control" placeholder="Contraseña" name="contrasenia">
+                <div class="input-group-append">
+                    <div class="input-group-text">
+                        <span class="fas fa-lock"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- /.col -->
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary btn-block">Registrar</button>
+                </div>
+                <!-- /.col -->
+            </div>
+        </form>
+        <!-- /.social-auth-links -->
+
+        <p class="mb-0">
+            <a href="~/Login" class="text-center">Iniciar Sesión</a>
+        </p>
+    </div>
+    <!-- /.login-card-body -->
+</div>

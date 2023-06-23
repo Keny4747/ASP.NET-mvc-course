@@ -1,0 +1,48 @@
+﻿@model WebApplication3.ViewModels.VentaViewModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+
+}
+<div>@ViewBag.categorias</div>
+<h2>Lista de Ventas</h2>
+<a asp-action="Create">Crear Venta</a>
+<table class="table table-bordered table-striped">
+    <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Descripción</th>
+        <th>Acciones</th>
+    </tr>
+    @foreach(var venta in Model.ventas) {
+        <tr>
+            <td>@venta.id</td>
+            <td>@venta.nombre</td>
+            <td>@venta.descripcion</td>
+            <td>
+                <a asp-action="Actualizar" asp-route-id="@venta.id">Actualizar</a>
+            </td>
+        </tr>
+    }
+</table>
+<div class="pagination">
+    @if (Model.paginationInfo.totalPages > 1) {
+        if (Model.paginationInfo.currentPage > 1) {
+            <a class="nav-link text-dark" asp-area="" asp-controller="Venta" asp-action="Index?pageNumber=@(Model.paginationInfo.currentPage - 1)">Página anterior</a>
+        }
+        for (int i = 1; i <= Model.paginationInfo.totalPages; i++) {
+            <a class="nav-link text-dark" asp-area="" asp-controller="Venta" asp-action="Index?pageNumber=@(i)">
+                @if (Model.paginationInfo.currentPage == i) {
+                    <b>@i</b>
+                } else {
+                    @i
+                }
+            </a>
+        }
+        if (Model.paginationInfo.currentPage < Model.paginationInfo.totalPages)
+        {
+            <a class="nav-link text-dark" asp-area="" asp-controller="Venta" asp-action="Index?pageNumber=@(Model.paginationInfo.currentPage + 1)">Página siguiente</a>
+        }
+    }
+</div>

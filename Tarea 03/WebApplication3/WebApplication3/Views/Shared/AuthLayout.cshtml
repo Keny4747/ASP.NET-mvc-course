@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebApplication3</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/AdminLTE/plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="~/AdminLTE/dist/css/adminlte.min.css">
+    @RenderSection("MiSeccion", required: false)
+</head>
+<body>
+    <div class="login-page">
+        <div class="login-box">
+            <div class="login-logo">
+                <a href="#"><b>Universidad</b>LTE</a>
+            </div>
+            @RenderBody()
+        </div>
+        @RenderSection("MiPiePagina", required: false)
+        <!-- /.login-box -->
+    </div>
+    <!-- /.login-page -->
+
+    <!--footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - WebApplication3 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer-->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/AdminLTE/plugins/jquery/jquery.min.js"></script>
+    <script src="~/AdminLTE/dist/js/adminlte.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+    
+</body>
+</html>
